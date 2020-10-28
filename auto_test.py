@@ -1,4 +1,13 @@
-import contextlib, io
+#!/usr/bin/env python3
+
+"""
+some tests for the slicing lab
+
+these should all pass if you run:
+
+python auto_test.py
+"""
+
 import slicing
 
 
@@ -20,3 +29,6 @@ assert slicing.first4_last4_every_other_removed(tuple(range(10))) == (4,)
 assert slicing.seq_reversed('something') == 'gnihtemos'
 assert slicing.seq_reversed(list(range(10))) == [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 assert slicing.seq_reversed(tuple(range(10))) == (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+
+print("All Tests Passed")
+
