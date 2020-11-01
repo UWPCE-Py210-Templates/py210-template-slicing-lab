@@ -30,5 +30,12 @@ assert slicing.seq_reversed('something') == 'gnihtemos'
 assert slicing.seq_reversed(list(range(10))) == [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 assert slicing.seq_reversed(tuple(range(10))) == (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
 
+
+assert slicing.last_third_first_third_mid_third(tuple(range(1, 7))) == (5, 6, 1, 2, 3, 4)
+assert slicing.last_third_first_third_mid_third(list(range(1, 7))) == [5, 6, 1, 2, 3, 4]
+assert slicing.last_third_first_third_mid_third(list(range(1, 10))) == [7, 8, 9, 1, 2, 3, 4, 5, 6]
+
+
+
 print("All Tests Passed")
 
